@@ -115,6 +115,7 @@ a {
                     <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
                         <ul class="nav navbar-nav menu_nav desktop-only">
                             <li class="nav-item"><router-link to="/" class="nav-link">Home</router-link></li>
+                            <li class="nav-item"><router-link to="/" class="nav-link">RoomBooking</router-link></li>
                             <li class="nav-item"><router-link to="/check" class="nav-link">Check Booking</router-link></li>
                             <li class="nav-item active"><router-link to="/feedback" class="nav-link">Feedback</router-link>
                             </li>
@@ -137,7 +138,7 @@ a {
                 <div class="page-cover text-center">
                     <h2 class="page-cover-tittle">Feedback</h2>
                     <ol class="breadcrumb" style="display: flex; justify-content: center;">
-                        <li><a href="/">Home</a></li>
+                        <li><a href="/">RoomBooking</a></li>
                         <li class="active">Feedback</li>
                     </ol>
                 </div>
@@ -153,17 +154,17 @@ a {
                         <div class="contact_info">
                             <div class="info_item">
                                 <i class="lnr lnr-home"></i>
-                                <h6>Sawojajar, Indonesia</h6>
+                                <h6>18A, CONG HOA, TAN BINH</h6>
                                 <p></p>
                             </div>
                             <div class="info_item">
                                 <i class="lnr lnr-phone-handset"></i>
-                                <h6><a href="#">+62 877-1621-2000</a></h6>
+                                <h6><a href="#">+84 90 888 6666</a></h6>
                                 <p>Mon to Fri 9am to 6 pm</p>
                             </div>
                             <div class="info_item">
                                 <i class="lnr lnr-envelope"></i>
-                                <h6><a href="#">radyaiftikhar@gmail.com</a></h6>
+                                <h6><a href="#">dammanhluu3241@gmail.com</a></h6>
                                 <p>Send us your query anytime!</p>
                             </div>
                         </div>

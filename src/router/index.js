@@ -25,6 +25,7 @@ import ResepConfirm from '../views/resepsionis/Confirm.vue'
 import Checkin from '../views/resepsionis/Checkin.vue'
 import Checkout from '../views/resepsionis/Checkout.vue'
 import history from '../views/resepsionis/History.vue'
+import Home from '../views/resepsionis/Home.vue'
 
 Vue.use(VueRouter)
 
@@ -57,6 +58,10 @@ const routes = [
   {
     path: '/signUp',
     component: signUp
+  },
+  {
+    path: '/Home',
+    component: Home
   },
   // =======> Public Route End <=======
 

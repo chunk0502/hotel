@@ -40,7 +40,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
                     <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
                         <ul class="nav navbar-nav menu_nav desktop-only">
 
-                            <li class="nav-item active"><router-link to="/" class="nav-link">Home</router-link></li>
+                            <li class="nav-item"><router-link to="/Home" class="nav-link">Home</router-link></li>
+                            <li class="nav-item active"><router-link to="/" class="nav-link">RoomBooking</router-link></li>
                             <li class="nav-item"><router-link to="/check" class="nav-link">Check Booking</router-link></li>
                             <li class="nav-item"><router-link to="/feedback" class="nav-link">Feedback</router-link></li>
                             <li class="nav-item" v-if="role === 'tamu'" @click="keluar"><router-link to=""
@@ -48,7 +49,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
                             <li class="nav-item" v-else><router-link to="/login" class="nav-link">Login</router-link></li>
                             <li class="nav-item" @click="checkHistory"><router-link to=""
                                     class="nav-link">History</router-link></li>
-
+                            
                         </ul>
                     </div>
                 </nav>
@@ -158,7 +159,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
             </div>
         </section>
         <!--================ Booking Area  =================-->
-
+        
         <!--================ Facilities Area  =================-->
         <section class="facilities_area section_gap">
             <div class="overlay bg-parallax" data-stellar-ratio="0.8" data-stellar-vertical-offset="0" data-background="">
@@ -397,9 +398,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
                 <div class="row footer-bottom d-flex justify-content-between align-items-center">
                     <p class="col-lg-8 col-sm-12 footer-text m-0">
                         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                        Copyright &copy; 2023 All rights reserved | made with <i class="fa fa-heart-o"
-                            aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a> redesign
-                        by radya with tears
+                        Copyright &copy;2024 All rights reserved | This template is made with <i class="fa fa-heart-o"
+                            aria-hidden="true"></i> by <a href="https://www.facebook.com/dammanhluu3241" target="_blank">Dam Manh Luu</a>
                         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                     </p>
                     <div class="col-lg-4 col-sm-12 footer-social">
