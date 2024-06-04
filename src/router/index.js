@@ -26,6 +26,7 @@ import Checkin from '../views/resepsionis/Checkin.vue'
 import Checkout from '../views/resepsionis/Checkout.vue'
 import history from '../views/resepsionis/History.vue'
 import Home from '../views/resepsionis/Home.vue'
+import Position from '../views/resepsionis/Position.vue'
 
 Vue.use(VueRouter)
 
@@ -62,6 +63,10 @@ const routes = [
   {
     path: '/Home',
     component: Home
+  },
+  {
+    path: '/Position',
+    component: Position
   },
   // =======> Public Route End <=======
 
