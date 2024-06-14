@@ -124,7 +124,8 @@ a {
                             <li class="nav-item" v-else><router-link to="/login" class="nav-link">Login</router-link></li>
                             <li class="nav-item" @click="checkHistory"><router-link to=""
                                     class="nav-link">History</router-link></li>
-                            <li class="nav-item"><router-link to="/position" class="nav-link">position</router-link></li>        
+                            <li class="nav-item"><router-link to="/position" class="nav-link">position</router-link></li> 
+                            <li class="nav-item"><router-link to="/DetailRoom" class="nav-link">DetailRoom</router-link></li>       
                         </ul>
                     </div>
                 </nav>
