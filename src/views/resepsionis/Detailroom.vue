@@ -3,7 +3,6 @@
     <header class="header_area" style="position: fixed;">
       <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light">
-          <!-- Brand and toggle get grouped for better mobile display -->
           <a class="navbar-brand logo_h" href="/"><img src="image/Logo.png" alt=""></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -11,17 +10,16 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
             <ul class="nav navbar-nav menu_nav desktop-only">
               <li class="nav-item"><router-link to="/" class="nav-link">Home</router-link></li>
               <li class="nav-item"><router-link to="/" class="nav-link">RoomBooking</router-link></li>
               <li class="nav-item"><router-link to="/check" class="nav-link">Check Booking</router-link></li>
               <li class="nav-item"><router-link to="/feedback" class="nav-link">Feedback</router-link></li>
-              <li class="nav-item" @click="logout" v-if="role === 'guest'"><router-link to="" class="nav-link">LogOut</router-link></li>
+              <li class="nav-item" @click="keluar" v-if="role === 'guest'"><router-link to="" class="nav-link">LogOut</router-link></li>
               <li class="nav-item" v-else><router-link to="/login" class="nav-link">Login</router-link></li>
               <li class="nav-item" @click="checkHistory"><router-link to="" class="nav-link">History</router-link></li>
-              <li class="nav-item"><router-link to="/position" class="nav-link">Position</router-link></li>
+              <li class="nav-item"><router-link to="/position" class="nav-link">position</router-link></li>
               <li class="nav-item active"><router-link to="/DetailRoom" class="nav-link">DetailRoom</router-link></li>
             </ul>
           </div>
@@ -40,26 +38,23 @@
             <p>{{ roomInfo }}</p>
           </div>
         </div>
-        <button class="edit-button">EDIT</button>
+        <button class="edit-button">Edit</button>
       </header>
       <main>
         <div class="room-detail">
-          <h2>SUITE ROOM</h2>
+          <h2>Suite Room</h2>
           <div class="room-content">
             <img src="https://cache.marriott.com/is/image/marriotts7prod/si-sgnsi-club-studio-kitchen-13487-22034:Classic-Hor?output-quality=70&interpolation=progressive-bilinear&downsize=512px:342px" alt="Room Image" class="room-image">
             <div class="price-info">
               <div class="price-item">
-                <p class="price-type">Flexible Member Price</p>
-                <p class="price">3,410,000 VND / night</p>
-                <p class="rate-details">Rate Details</p>
-                <button class="select-button">SELECT</button>
-              </div>
-              <hr class="divider-line">
-              <div class="price-item">
-                <p class="price-type">Flexible Price</p>
-                <p class="price">3,680,000 VND / night</p>
-                <p class="rate-details">Rate Details</p>
-                <button class="select-button">SELECT</button>
+                <div class="price-text">
+                  <p class="price-type">Flexible Member Price</p>
+                  <p class="rate-details">Rate Details</p>
+                </div>
+                <div class="price-and-button">
+                  <p class="price">4,410,000 VND / night</p>
+                  <button class="select-button">Select</button>
+                </div>
               </div>
             </div>
           </div>
@@ -70,22 +65,19 @@
     <div class="container main-content">
       <main>
         <div class="room-detail">
-          <h2>DELUXE ROOM</h2>
+          <h2>Deluxe Room</h2>
           <div class="room-content">
             <img src="https://cache.marriott.com/content/dam/marriott-renditions/SGNSI/sgnsi-king-suitebedroom-4648-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=512px:342px" alt="Room Image" class="room-image">
             <div class="price-info">
               <div class="price-item">
-                <p class="price-type">Flexible Member Price</p>
-                <p class="price">4,410,000 VND / night</p>
-                <p class="rate-details">Rate Details</p>
-                <button class="select-button">SELECT</button>
-              </div>
-              <hr class="divider-line">
-              <div class="price-item">
-                <p class="price-type">Flexible Price</p>
-                <p class="price">4,680,000 VND / night</p>
-                <p class="rate-details">Rate Details</p>
-                <button class="select-button">SELECT</button>
+                <div class="price-text">
+                  <p class="price-type">Flexible Member Price</p>
+                  <p class="rate-details">Rate Details</p>
+                </div>
+                <div class="price-and-button">
+                  <p class="price">4,410,000 VND / night</p>
+                  <button class="select-button">Select</button>
+                </div>
               </div>
             </div>
           </div>
@@ -96,22 +88,19 @@
     <div class="container main-content">
       <main>
         <div class="room-detail">
-          <h2>VIP ROOM</h2>
+          <h2>VIP Room</h2>
           <div class="room-content">
             <img src="https://cache.marriott.com/is/image/marriotts7prod/si-sgnsi-studio-twin-27424:Classic-Hor?output-quality=70&interpolation=progressive-bilinear&downsize=512px:342px" alt="Room Image" class="room-image">
             <div class="price-info">
               <div class="price-item">
-                <p class="price-type">Flexible Member Price</p>
-                <p class="price">5,410,000 VND / night</p>
-                <p class="rate-details">Rate Details</p>
-                <button class="select-button">SELECT</button>
-              </div>
-              <hr class="divider-line">
-              <div class="price-item">
-                <p class="price-type">Flexible Price</p>
-                <p class="price">5,680,000 VND / night</p>
-                <p class="rate-details">Rate Details</p>
-                <button class="select-button">SELECT</button>
+                <div class="price-text">
+                  <p class="price-type">Flexible Member Price</p>
+                  <p class="rate-details">Rate Details</p>
+                </div>
+                <div class="price-and-button">
+                  <p class="price">4,410,000 VND / night</p>
+                  <button class="select-button">Select</button>
+                </div>
               </div>
             </div>
           </div>
@@ -119,16 +108,13 @@
       </main>
     </div>
 
-    <!--================ start footer Area  =================-->
     <footer class="footer-area section_gap">
       <div class="container">
         <div class="border_line"></div>
         <div class="row footer-bottom d-flex justify-content-between align-items-center">
           <p class="col-lg-8 col-sm-12 footer-text m-0">
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
             Copyright &copy;2024 All rights reserved | This template is made with <i class="fa fa-heart-o"
               aria-hidden="true"></i> by <a href="https://www.facebook.com/dammanhluu3241" target="_blank">Dam Manh Luu</a>
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
           </p>
           <div class="col-lg-4 col-sm-12 footer-social">
             <a href="#"><i class="fa fa-facebook"></i></a>
@@ -139,7 +125,6 @@
         </div>
       </div>
     </footer>
-    <!--================ End footer Area  =================-->
   </div>
 </template>
 
@@ -149,16 +134,16 @@ export default {
   data() {
     return {
       dateInfo: 'Tuesday, June 25, 2024 - Wednesday, June 26, 2024',
-      roomInfo: '1 Room: 2 Adults',
-      role: 'guest' // or 'tamu'
+      roomInfo: '1 Room : 2 Adults',
+      role: 'guest' // hoặc 'tamu'
     };
   },
   methods: {
-    logout() {
-      // Your logout method here
+    keluar() {
+      // Phương thức đăng xuất của bạn ở đây
     },
     checkHistory() {
-      // Your check history method here
+      // Phương thức kiểm tra lịch sử của bạn ở đây
     }
   }
 };
@@ -180,7 +165,7 @@ export default {
 }
 
 .main-content {
-  padding-top: 120px; /* Adjust the padding value to match the height of your fixed header */
+  padding-top: 120px;
 }
 
 header {
@@ -190,7 +175,7 @@ header {
   padding: 20px;
   background-color: #f3f3f3;
   border-bottom: 1px solid #ddd;
-  margin-bottom: 20px; /* Add margin bottom to create space between header and main content */
+  margin-bottom: 20px;
 }
 
 .header-section {
@@ -232,6 +217,7 @@ main {
   padding: 20px;
   border: 1px solid #ddd;
   border-radius: 5px;
+  margin-bottom: 20px;
 }
 
 .room-content {
@@ -243,6 +229,7 @@ main {
   width: 50%;
   height: auto;
   margin-right: 20px;
+  max-width: 200px;
 }
 
 .price-info {
@@ -250,24 +237,42 @@ main {
 }
 
 .price-item {
-  text-align: left;
-  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+.price-text {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
 .price-type {
+  color: black;
   font-weight: bold;
   margin-bottom: 5px;
 }
 
-.price {
-  color: #d9534f;
-  font-size: 18px;
-  margin-bottom: 5px;
+.rate-details {
+  color: red;
+  margin-bottom: 10px;
 }
 
-.rate-details {
-  color: #5a5a5a;
-  margin-bottom: 10px;
+.price-and-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.price {
+  color: black;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  flex-grow: 1;
 }
 
 .select-button {
@@ -283,15 +288,8 @@ main {
   background-color: #333;
 }
 
-.divider-line {
-  border: 0;
-  height: 1px;
-  background: #ddd;
-  margin: 20px 0;
-}
-
 .footer-area {
-  background: #f9f9ff;
+  background: #000;
   padding: 30px 0;
   font-size: 14px;
 }
@@ -303,11 +301,12 @@ main {
 
 .footer-text {
   margin: 0;
+  color: #fff;
 }
 
 .footer-social a {
   margin-right: 15px;
-  color: #333;
+  color: #fff;
 }
 
 .footer-social a:hover {
